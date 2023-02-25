@@ -1,9 +1,22 @@
 # CIA
 
-Most CIA opacities are taken from the [petitRADTRANS](https://doi.org/10.1051/0004-6361/201935470) database.
+The following CIA cross sections come from the [petitRADTRANS](https://doi.org/10.1051/0004-6361/201935470) database. They got these cross section from the [Hitran website](https://hitran.org/cia/), but interpolated them to a regular grid:
 
-Exceptions:
-- H2O-H2O is the MT_CKD v3.5 H2O continuum formulated as CIA.
-- H2O-N2 is the MT_CKD v3.5 foreign continuum formulated as CIA between H2O and N2. This assumes that
+- CH4-CH4
+- CO2-CO2
+- H2-CH4
+- H2-H2
+- H2-He
+- N2-N2
+- N2-O2
+- O2-O2
 
+These CIA are directly from the [Hitran website](https://hitran.org/cia/), but I interpolated them to a regular grid:
 
+- CO2-CH4
+- CO2-H2
+- N2-H2
+
+These CIA are representations of the MT_CKD v3.5 H2O and foreign continuum:
+- H2O-H2O
+- H2O-N2
