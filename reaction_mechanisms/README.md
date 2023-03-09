@@ -47,4 +47,17 @@ I updated the following reaction. Rate from JPL-15
 
 Also added NH3aer and He.
 
+# 3/9/23
+
+I updated the following reaction following [Lovejoy et al. (1996)](https://doi.org/10.1021/jp962414d)
+
+```yaml
+# - equation: SO3 + H2O (+ M) <=> H2SO4 (+ M)
+#   type: falloff
+#   low-P-rate-constant: {A: 9.0e-29, b: -2.0, Ea: -1000.0}
+#   high-P-rate-constant: {A: 3.6e-10, b: -2.0, Ea: -1000.0}
+- equation: SO3 + H2O + H2O <=> H2SO4 + H2O
+  rate-constant: {A: 2.3e-43, b: 1.0, Ea: -6540.0}
+```
+
 
