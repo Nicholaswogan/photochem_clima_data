@@ -64,4 +64,4 @@ I updated the following reaction following [Lovejoy et al. (1996)](https://doi.o
 
 I updated a variety of thermodynamics for CH3O and H2COH, and rates for related species. All changes were motivated by [Xu et al. (2015)](https://doi.org/10.1021/acs.jpca.5b00553). Details for these changes are justified at this github repository: https://github.com/Nicholaswogan/RateExplorer/tree/main/experiments/10-02-23
 
-
+I also updated thermodynamics for H2 and Cl2 following NIST, to include thermodynamic data up to 6000 K.
