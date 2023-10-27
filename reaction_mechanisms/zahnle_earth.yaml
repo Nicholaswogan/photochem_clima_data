@@ -671,8 +671,8 @@ species:
     model: Shomate
     temperature-ranges: [0.0, 1200.0, 6000.0]
     data:
-    - [5.193767, 93.23249, -44.85457, 7.882279, 0.551175, 15.5409, 217.5163]
-    - [71.35268, 6.174497, -1.19109, 0.079564, -15.58917, -35.7327, 277.368]
+    - [5.193767, 93.23249, -44.85457, 7.882279, 0.551175, 18.1409, 217.5163]
+    - [71.35268, 6.174497, -1.19109, 0.079564, -15.58917, -33.1327, 277.368]
   note: Estimated from thermodynamic data at 298 K and species H2CO
 - name: H2COH
   composition: {H: 3, C: 1, O: 1}
@@ -680,8 +680,8 @@ species:
     model: Shomate
     temperature-ranges: [0.0, 3000.0, 6000.0]
     data:
-    - [20.559, 95.615, -31.306, 3.5141, 0.025109, -29.0, 241.9]
-    - [111.5, 3.0, 0.0, 0.0, 0.0, -95.7, 310.6]
+    - [20.559, 95.615, -31.306, 3.5141, 0.025109, -25.3, 241.9]
+    - [111.5, 3.0, 0.0, 0.0, 0.0, -92.0, 310.6]
   note: Estimated from thermodynamic data at 298 K and species CH3OH
 - name: H2CN
   composition: {H: 2, C: 1, N: 1}
@@ -1044,7 +1044,7 @@ reactions:
 - equation: HCO + HCO <=> H2CO + CO
   rate-constant: {A: 4.5e-11, b: 0.0, Ea: 0.0}
 - equation: H2CO + H <=> HCO + H2
-  rate-constant: {A: 3.75936e-14, b: 1.05, Ea: 1650.0}
+  rate-constant: {A: 2.28e-19, b: 2.65, Ea: 766.5}
 - equation: H2CO + OH <=> HCO + H2O
   rate-constant: {A: 5.731102e-15, b: 1.18, Ea: -225.0}
 - equation: O + H2CO <=> OH + HCO
@@ -1094,7 +1094,9 @@ reactions:
 - equation: H2 + CH2 <=> CH3 + H
   rate-constant: {A: 1.0e-11, b: 0.0, Ea: 5300.0}
 - equation: CH3 + O <=> H2CO + H
-  rate-constant: {A: 1.4e-10, b: 0.0, Ea: 0.0}
+  rate-constant: {A: 9.0e-11, b: 0.0, Ea: 0.0}
+- equation: CH3 + O <=> HCO + H2
+  rate-constant: {A: 6.0e-11, b: 0.0, Ea: 0.0}
 - equation: CH3 + OH <=> H2COH + H
   rate-constant: {A: 1.066667e-14, b: 1.0, Ea: 1610.0}
 - equation: CH2 + HCO <=> CH3 + CO
@@ -1119,8 +1121,8 @@ reactions:
   rate-constant: {A: 7.1e-12, b: 0.0, Ea: 5052.0}
 - equation: H + H2CO (+ M) <=> CH3O (+ M)
   type: falloff
-  low-P-rate-constant: {A: 5.13e-22, b: -3.0, Ea: 3360.0}
-  high-P-rate-constant: {A: 8.0e-10, b: 0.0, Ea: 3160.0}
+  low-P-rate-constant: {A: 1.22e-23, b: -3.0, Ea: 2900}
+  high-P-rate-constant: {A: 6.56e+03, b: -5, Ea: 4000}
 - equation: H + CH3O <=> CH3 + OH
   rate-constant: {A: 7.7e-11, b: 0.0, Ea: 375.0}
 - equation: H + CH3O <=> H2CO + H2
@@ -1129,8 +1131,8 @@ reactions:
   rate-constant: {A: 1.33e-11, b: 0.0, Ea: 5940.0}
 - equation: H + H2CO (+ M) <=> H2COH (+ M)
   type: falloff
-  low-P-rate-constant: {A: 3.0e-33, b: 0.0, Ea: 600.0}
-  high-P-rate-constant: {A: 3.0e-14, b: 0.0, Ea: 600.0}
+  low-P-rate-constant: {A: 2.82e-29, b: -1.2, Ea: 2900}
+  high-P-rate-constant: {A: 3.0e-12, b: 0.0, Ea: 3500}
 - equation: H + H2COH <=> H2CO + H2
   rate-constant: {A: 1.66e-11, b: 0.0, Ea: 0.0}
 - equation: HCO + H2COH <=> H2CO + H2CO

@@ -60,4 +60,8 @@ I updated the following reaction following [Lovejoy et al. (1996)](https://doi.o
   rate-constant: {A: 2.3e-43, b: 1.0, Ea: -6540.0}
 ```
 
+# 10/27/23
+
+I updated a variety of thermodynamics for CH3O and H2COH, and rates for related species. All changes were motivated by [Xu et al. (2015)](https://doi.org/10.1021/acs.jpca.5b00553). Details for these changes are justified at this github repository: https://github.com/Nicholaswogan/RateExplorer/tree/main/experiments/10-02-23
+
 
