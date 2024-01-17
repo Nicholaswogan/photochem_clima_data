@@ -183,6 +183,14 @@ species:
     data:
     - [79.88051, 3.276394, -0.0001, 1.0e-05, -1.179851, 107.0, 399.7013]
   note: From the NIST database
+- name: S8
+  composition: {S: 8}
+  thermo:
+    model: Shomate
+    temperature-ranges: [0.0, 6000.0]
+    data:
+    - [180.6697, 1.918988, -0.52013, 0.044394, -2.270155, 39.45, 635.5496]
+  note: From the NIST database
 - name: H2S
   composition: {H: 2, S: 1}
   thermo:
@@ -944,14 +952,19 @@ particles:
   composition: {N: 1, H: 3}
   optical-properties: none
 - name: S8aer
-  formation: reaction
+  formation: saturation
   density: 1.0
+  gas-phase: S8
+  saturation-parameters: {A: 8.09, B: -4941.34, C: -940367.8} # From Zahnle et al. (2016)
   composition: {S: 8}
   optical-properties: none
-  equation: S4 + S4 (+ M) => S8aer (+ M)
-  type: falloff
-  low-P-rate-constant: {A: 9.0e-26, b: -2.0, Ea: 0.0}
-  high-P-rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
+- name: S2aer
+  formation: saturation
+  density: 1.0
+  gas-phase: S2
+  saturation-parameters: {A: 14.5, B: -11318.6, C: -984857.9} # From Zahnle et al. (2016)
+  composition: {S: 2}
+  optical-properties: none
 - name: HCaer1
   formation: reaction
   density: 1.0
@@ -1567,6 +1580,10 @@ reactions:
   high-P-rate-constant: {A: 3.0e-11, b: 0.0, Ea: 0.0}
 - equation: S + S4 <=> S2 + S3
   rate-constant: {A: 4.0e-11, b: 0.0, Ea: 500.0}
+- equation: S4 + S4 (+ M) <=> S8 (+ M)
+  type: falloff
+  low-P-rate-constant: {A: 9.0e-26, b: -2.0, Ea: 0.0}
+  high-P-rate-constant: {A: 1.0e-11, b: 0.0, Ea: 0.0}
 - equation: S + H (+ M) <=> HS (+ M)
   type: falloff
   low-P-rate-constant: {A: 1.0e-32, b: 0.0, Ea: 0.0}
@@ -2200,6 +2217,8 @@ reactions:
   type: falloff
   low-P-rate-constant: {A: 7.0e-30, b: 0.0, Ea: 0.0}
   high-P-rate-constant: {A: 7.0e-11, b: 0.0, Ea: 0.0}
+- equation: H + S8 <=> HS4 + S4
+  rate-constant: {A: 3.0e-12, b: 0.0, Ea: 5000.0}
 - equation: H + HS4 <=> H2 + S4
   rate-constant: {A: 1.0e-10, b: 0.0, Ea: 1000.0}
 - equation: OH + HS4 <=> H2O + S4
@@ -2210,6 +2229,8 @@ reactions:
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 2500.0}
 - equation: NH2 + HS4 <=> NH3 + S4
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 500.0}
+- equation: HS4 + HS4 <=> H2 + S8
+  rate-constant: {A: 3.0e-12, b: 0.0, Ea: 2500.0}
 - equation: S + HS4 <=> HS + S4
   rate-constant: {A: 3.0e-11, b: 0.0, Ea: 1000.0}
 - equation: H + C4H2 (+ M) <=> C4H3 (+ M)
@@ -2404,6 +2425,12 @@ reactions:
   rate-constant: {A: 2.8e-11, b: 0.0, Ea: 250}
 - equation: H2O + hv => OH + H
   type: photolysis
+- equation: H2O + hv => H2 + O1D
+  type: photolysis
+- equation: H2O + hv => O + H + H
+  type: photolysis
+- equation: H2 + hv => H + H
+  type: photolysis
 - equation: CO2 + hv => CO + O
   type: photolysis
 - equation: CO2 + hv => CO + O1D
@@ -2513,4 +2540,6 @@ reactions:
 - equation: C4H4 + hv => C2H2 + C2H2
   type: photolysis
 - equation: HCCCN + hv => C2H + CN
+  type: photolysis
+- equation: S8 + hv => S8
   type: photolysis

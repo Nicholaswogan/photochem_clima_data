@@ -25,7 +25,7 @@ def check_consistency(verbose=True):
                     raise Exception('Reaction '+rx+' in xsections meta-data does not have a corresponding data file.')
 
     directories = [a for a in os.listdir() if os.path.isdir(a) and a[0]!='.']
-    directories2remove = ['__pycache__', "Zahnle_Kevin_data"]
+    directories2remove = ['__pycache__', "Zahnle_Kevin_data",'H2O_phidrates','H2O_interp']
     for directory in directories2remove:
         try:
             directories.remove(directory)

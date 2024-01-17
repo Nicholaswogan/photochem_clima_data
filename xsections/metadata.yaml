@@ -5,12 +5,36 @@ overall-notes:
   - Huebner and Mukherjee (2015) does not state the temperature of their
     data. Here I assume their data is reasonable for 300 K.
 
+H2:
+  reactions:
+    H2 + hv = H + H:
+      citations:
+      - nm-range: 92.5 - 120.0
+        citation: Heays et al. (2017)
+        DOI: 10.1051/0004-6361/201628742
+  xsections:
+    citations:
+    - nm-range: 92.5 - 120.0
+      citation: Heays et al. (2017)
+      DOI: 10.1051/0004-6361/201628742
+  general-notes: Taken from VULCAN, who got them from the Leiden database.
+
 H2O:
   reactions:
     H2O + hv = OH + H:
       citations:
       - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
+        citation: JPL-19
+        DOI:
+    H2O + hv = H2 + O1D:
+      citations:
+      - nm-range: 92.5 - 251.6
+        citation: JPL-19
+        DOI:
+    H2O + hv = O + H + H:
+      citations:
+      - nm-range: 92.5 - 251.6
+        citation: JPL-19
         DOI:
   xsections:
     citations:
@@ -350,7 +374,7 @@ OCS:
 
 S8:
   reactions:
-    S8 + hv = S8L:
+    S8 + hv = S8:
       citations:
       - nm-range: 176.2 - 450.0
         citation: Kevin Zahnle
@@ -579,20 +603,6 @@ CH3CN:
   xsections:
     citations:
     - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-S8L:
-  reactions:
-    S8L + hv = S4 + S4:
-      citations:
-      - nm-range: 176.2 - 850.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 850.0
       citation: Kevin Zahnle
       DOI:
   general-notes:

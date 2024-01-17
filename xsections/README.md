@@ -52,4 +52,9 @@ Which uses Phidrates.
 
 I added `metadata.yaml`, which contains citations for all the cross sections. I also added `check_consistency.py` which check for consistency between data and metadata.
 
+## 1/16/24
 
+- I updated photolysis branching ratios for H2O following JPL-19, and VULCAN
+- Added H2 photolysis. 
+- Changed S8 photolysis to create itself (i.e. absorption, but not photolysis)
+- Deleted S8L, because it is not used

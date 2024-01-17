@@ -65,3 +65,9 @@ I updated the following reaction following [Lovejoy et al. (1996)](https://doi.o
 I updated a variety of thermodynamics for CH3O and H2COH, and rates for related species. All changes were motivated by [Xu et al. (2015)](https://doi.org/10.1021/acs.jpca.5b00553). Details for these changes are justified at this github repository: https://github.com/Nicholaswogan/RateExplorer/tree/main/experiments/10-02-23
 
 I also updated thermodynamics for H2 and Cl2 following NIST, to include thermodynamic data up to 6000 K.
+
+# 1/16/24
+
+I added two new photolysis branches. All the H2O branches are now OH + H, H2 + O1D, and O + H + H. Branching ratios are based on JPL-19. I also added H2 photolysis, taking data from the Leiden database. 
+
+Finally, I also, added gas-phase S8 into the code, along with 3 reactions connecting S8 to the rest of the network. These reactions + thermodynamics come from Kevin's original network he sent me (https://github.com/Nicholaswogan/ImpactAtmosphere/blob/main/ImpactAtmosphere/data). I also added S8 photolysis, but only as an opacity source (S8 absorbs light, but does not photolyze). I also added the particles S2aer and S8aer, with saturation vapor pressures based on Zahnle et al. (2016) (10.3847/0004-637X/824/2/137).
