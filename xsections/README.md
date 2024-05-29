@@ -58,3 +58,15 @@ I added `metadata.yaml`, which contains citations for all the cross sections. I 
 - Added H2 photolysis. 
 - Changed S8 photolysis to create itself (i.e. absorption, but not photolysis)
 - Deleted S8L, because it is not used
+
+## 5/29/24
+
+No new updates, I want to correct past notes. Here are a summary of the citations for each cross section. All are from Kevin Zahnle except,
+
+Phidrates: HCCCN, O3, H2CO, O2, SO2, NO
+Fahr and Nayak (1996): C4H4
+Heays et al. (2017): H2
+
+I added HCCCN and C4H4 photolysis a long while ago, but didn't note it. For C4H4, I followed [Lavvas et al. (2008)](https://doi.org/10.1016/j.pss.2007.05.026), using cross sections from Fahr and Nayak (1996), and yields from Gladstone et al. (1996). For HCCCN, I just took values from Phidrates.
+
+The previous edit (1/16/24) made it so that when S8 rings only absorb radiation, but do not photolyze. The idea is that the rings would be split, but then quickly reform.
