@@ -71,3 +71,35 @@ I also updated thermodynamics for H2 and Cl2 following NIST, to include thermody
 I added two new photolysis branches. All the H2O branches are now OH + H, H2 + O1D, and O + H + H. Branching ratios are based on JPL-19. I also added H2 photolysis, taking data from the Leiden database. 
 
 Finally, I also, added gas-phase S8 into the code, along with 3 reactions connecting S8 to the rest of the network. These reactions + thermodynamics come from Kevin's original network he sent me (https://github.com/Nicholaswogan/ImpactAtmosphere/blob/main/ImpactAtmosphere/data). I also added S8 photolysis, but only as an opacity source (S8 absorbs light, but does not photolyze). I also added the particles S2aer and S8aer, with saturation vapor pressures based on Zahnle et al. (2016) (10.3847/0004-637X/824/2/137).
+
+# 5/23/24
+
+First, I want to simply state the reactions that I have changed since Kevin sent me `earth_125_5-26-2021_modified.rx`. Note that `earth_125_5-26-2021.rx` had a couple duplicates and bad mass balance reactions, so Kevin and I fixed those to make `earth_125_5-26-2021_modified.rx` (see notes here: https://github.com/Nicholaswogan/ImpactAtmosphere/blob/main/ImpactAtmosphere/data/notes.md). Since, `earth_125_5-26-2021_modified.rx`, I have made the following changes to the kinetics
+
+- H2CO + H <=> HCO + H2 (10/27/23)
+- CH3 + O <=> H2CO + H (10/27/23)
+- CH3 + O <=> HCO + H2 (10/27/23)
+- H + H2CO (+ M) <=> CH3O (+ M) (10/27/23)
+- H + H2CO (+ M) <=> H2COH (+ M) (10/27/23)
+- S + O2 <=> SO + O (altered rate, 12/23/21)
+- SO3 + H2O + H2O <=> H2SO4 + H2O (altered rate, 3/9/23)
+- Cl + O3 <=> ClO + O2 (added, 12/16/21)
+- C2H4 + N2D <=> CH3CN + H (added, 10/27/21)
+
+The first 5 rates were updated following Xu et al. (2015) as explained in note 10/27/23. They are great and should stay.
+
+I took a close look at the next 4 rates, to make sure I didn't introduce anything that would break down at high or low temperatures. My analysis is detailed here: https://github.com/Nicholaswogan/RateExplorer/tree/main/experiments/5-29-24 . In summary, I'm going to keep all the rates, except S + O2 <=> SO + O, which I am updating to the following based on [Lu et al. (2004)](http://dx.doi.org/10.1063/1.1792611). The rate below is a custom fit, designed to work well at high and low temps.
+
+```yaml
+- equation: S + O2 <=> SO + O
+  rate-constant: {A: 3.21e-16, b: 1.35, Ea: -285.8}
+```
+
+Also, I have updated the rate of HO2 + HO2. Kevin told me via email that his original rate was a typo. This new rate is described here: https://github.com/Nicholaswogan/RateExplorer/tree/main/experiments/4-18-24 . It is a custom fit based on [Klippenstein et al. (2022)](https://doi.org/10.1016/j.combustflame.2021.111975) and [Kircher and Sander (1984)](https://doi.org/10.1021/j150654a029).
+
+```yaml
+- equation: HO2 + HO2 <=> H2O2 + O2
+  rate-constant: {A: 3.19e-19, b: 2.01, Ea: -1274.3}
+```
+
+

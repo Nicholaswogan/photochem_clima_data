@@ -1643,7 +1643,7 @@ reactions:
 - equation: O + S2 <=> SO + S
   rate-constant: {A: 1.1e-11, b: 0.0, Ea: 0.0}
 - equation: S + O2 <=> SO + O
-  rate-constant: {A: 1.6e-12, b: 0, Ea: -100.0}
+  rate-constant: {A: 3.21e-16, b: 1.35, Ea: -285.8}
 - equation: S3 + O <=> S2 + SO
   rate-constant: {A: 2.0e-11, b: 0.0, Ea: 500.0}
 - equation: S4 + O <=> S3 + SO
@@ -1937,10 +1937,8 @@ reactions:
   type: falloff
   low-P-rate-constant: {A: 6.615247e-29, b: -0.8, Ea: 0.0}
   high-P-rate-constant: {A: 2.6e-11, b: 0.0, Ea: 0.0}
-- equation: HO2 + HO2 (+ M) <=> H2O2 + O2 (+ M)
-  type: falloff
-  low-P-rate-constant: {A: 1.9e-33, b: 0.0, Ea: -980.0}
-  high-P-rate-constant: {A: 2.2e-14, b: 0.0, Ea: -60.0}
+- equation: HO2 + HO2 <=> H2O2 + O2
+  rate-constant: {A: 3.19e-19, b: 2.01, Ea: -1274.3}
 - equation: H2CO + HO2 <=> HCO + H2O2
   rate-constant: {A: 6.735753e-20, b: 2.5, Ea: 5140.0}
 - equation: H2O2 + H <=> H2 + HO2
