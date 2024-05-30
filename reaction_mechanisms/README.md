@@ -102,4 +102,10 @@ Also, I have updated the rate of HO2 + HO2. Kevin told me via email that his ori
   rate-constant: {A: 3.19e-19, b: 2.01, Ea: -1274.3}
 ```
 
+# 5/30/24
 
+Here, I update all the gas saturation vapor pressures. All updates are cited and detailed here: https://github.com/Nicholaswogan/RateExplorer/tree/main/saturation_thermo commit c6f7135da873e4ef9be4944a2511dbadc3299ee8.
+
+I use a new scheme based on the Clausius Clapeyron equation, which assumes latent heat has linear temperature dependence. The latent heat is allowed a discontinuous transition between ice and liquid phases.
+
+I have also pieced together Shomate polynomials for each condensible, based on the saturation vapor pressure and the gas-phase gibbs energy. I've saved all these polynomials in a separate file, which are useful for equilibrium chemistry calculations.
