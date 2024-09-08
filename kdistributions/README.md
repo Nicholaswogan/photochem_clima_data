@@ -48,3 +48,9 @@ Below are a summary of the relevant settings I used in HELIOS-K. These settings 
 - 25 cm^-1 cutoff
 - Pressure broadening is done by air (qalphaL = 0.0)
 - Voigt lineshape (profile = 1)
+
+## SO2
+- I used HITRAN 2016 data
+- 25 cm^-1 cutoff
+- Pressure broadening is done by air (qalphaL = 0.0)
+- Voigt lineshape (profile = 1)
