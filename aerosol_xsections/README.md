@@ -7,18 +7,19 @@ I use the `miepython` python package to compute aerosol optical properties: http
 
 Each folder corresponds to optical properties of different types of aerosols. For example `khare1984` contains the measured index of refraction of laboratory synthetic hydrocarbon aerosols analogous to the ones that are made in Titan's atmosphere.
 
-Each folder should contain a few files: `mie_<folder-name>.dat` (required), `frac_<folder-name>.dat` (optional), and an ascii file containing measured index of refractions.
+Each folder should contain a few files: `mie_<folder-name>.h5` (required), `frac_<folder-name>.h5` (optional), and an ascii file containing measured index of refractions.
 
-`mie_<folder-name>.dat` - Fortran binary file containing calculated optical properties using mie theory. The records in the mie binary file have the following organization
-1. `nw`, number of wavelength bins (integer(4))
-2. wavelengths in nm (real(8), dimension(nw))
-3. `nrad`, number of radii bins (integer(4))
-4. radii in micrometer (real(8), dimension(nrad))
-5. single scattering albedo (real(8), dimension(nrad, nw))
-6. extinction (real(8), dimension(nrad, nw))
-7. asymmetry factor (real(8), dimension(nrad, nw))
+`mie_<folder-name>.h5` - Contains calculated optical properties using mie theory. The file has the following structure
 
-`frac_<folder-name>.dat` (optional) - Fortran binary file containing calculated optical properties using fractal theory following [Wolf and Toon (2010)](https://science.sciencemag.org/content/328/5983/1266.abstract).
+```yaml
+wavelengths: Wavelength [nm]
+radii: Particle radii [um]
+w0: Single scattering albedo [unitless], dimensions (len(radii),len(wavelengths))
+qext: Extinction [1/particle], dimensions (len(radii),len(wavelengths))
+g0: Asymmetry factor [unitless], dimensions (len(radii),len(wavelengths))
+```
+
+`frac_<folder-name>.h5` (optional) - A file containing calculated optical properties using fractal theory following [Wolf and Toon (2010)](https://science.sciencemag.org/content/328/5983/1266.abstract).
 
 ## Folders
 
