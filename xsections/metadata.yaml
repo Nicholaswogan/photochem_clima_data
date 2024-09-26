@@ -1,848 +1,365 @@
-
-overall-notes:
-  - Xsections are in [cm^2/molecule]. Wavelengths are in [nm]. Quantum yields
-    are dimensionless
-  - Huebner and Mukherjee (2015) does not state the temperature of their
-    data. Here I assume their data is reasonable for 300 K.
-
-H2:
-  reactions:
-    H2 + hv = H + H:
-      citations:
-      - nm-range: 92.5 - 120.0
-        citation: Heays et al. (2017)
-        DOI: 10.1051/0004-6361/201628742
+C:
   xsections:
-    citations:
-    - nm-range: 92.5 - 120.0
-      citation: Heays et al. (2017)
-      DOI: 10.1051/0004-6361/201628742
-  general-notes: Taken from VULCAN, who got them from the Leiden database.
-
-H2O:
-  reactions:
-    H2O + hv = OH + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: JPL-19
-        DOI:
-    H2O + hv = H2 + O1D:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: JPL-19
-        DOI:
-    H2O + hv = O + H + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: JPL-19
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes: 
-
-CH2CO:
-  reactions:
-    CH2CO + hv = 1CH2 + CO:
-      citations:
-      - nm-range: 92.5 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-H2S:
-  reactions:
-    H2S + hv = HS + H:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-C4H2:
-  reactions:
-    C4H2 + hv = C4H + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-S2:
-  reactions:
-    S2 + hv = S + S:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-C2H6:
-  reactions:
-    C2H6 + hv = C2H5 + H:
-      citations:
-      - nm-range: 92.5 - 172.5
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 172.5
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-S3:
-  reactions:
-    S3 + hv = S2 + S:
-      citations:
-      - nm-range: 176.2 - 850.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 850.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-S4:
-  reactions:
-    S4 + hv = S3 + S:
-      citations:
-      - nm-range: 176.2 - 850.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 850.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-HO2:
-  reactions:
-    HO2 + hv = OH + O:
-      citations:
-      - nm-range: 176.2 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-HNO3:
-  reactions:
-    HNO3 + hv = OH + NO2:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-"NO":
-  reactions:
-    NO + hv = N + O:
-      citations:
-      - nm-range: 0.1 - 191.0
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-  xsections:
-    citations:
-    - nm-range: 0.1 - 191.0
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes:
-
-HCN:
-  reactions:
-    HCN + hv = H + CN:
-      citations:
-      - nm-range: 92.5 - 172.5
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 172.5
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-N2H4:
-  reactions:
-    N2H4 + hv = N2H3 + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-SO3:
-  reactions:
-    SO3 + hv = SO2 + O:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-O2:
-  reactions:
-    O2 + hv = O + O:
-      citations:
-      - nm-range: 0.1 - 242.37
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    O2 + hv = O + O1D:
-      citations:
-      - nm-range: 0.1 - 242.37
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-  xsections:
-    citations:
-    - nm-range: 0.1 - 242.37
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes:
-
-SO2:
-  reactions:
-    SO2 + hv = SO + O:
-      citations:
-      - nm-range: 0.06 - 239.9
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    SO2 + hv = S + O2:
-      citations:
-      - nm-range: 0.06 - 239.9
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-  xsections:
-    citations:
-    - nm-range: 0.06 - 239.9
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes:
-
-CO:
-  reactions:
-    CO + hv = C + O:
-      citations:
-      - nm-range: 92.5 - 172.5
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 172.5
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-CH3OH:
-  reactions:
-    CH3OH + hv = CH3 + OH:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-    CH3OH + hv = H2CO + H2:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-    CH3OH + hv = CH3O + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-O3:
-  reactions:
-    O3 + hv = O1D + O2:
-      citations:
-      - nm-range: 0.06 - 900.0
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    O3 + hv = O + O2:
-      citations:
-      - nm-range: 0.06 - 900.0
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-  xsections:
-    citations:
-    - nm-range: 0.06 - 900.0
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes:
-
-CH3CHO:
-  reactions:
-    CH3CHO + hv = CH3CO + H:
-      citations:
-      - nm-range: 92.5 - 850.0
-        citation: Kevin Zahnle
-        DOI:
-    CH3CHO + hv = CH3 + HCO:
-      citations:
-      - nm-range: 92.5 - 850.0
-        citation: Kevin Zahnle
-        DOI:
-    CH3CHO + hv = CH4 + CO:
-      citations:
-      - nm-range: 92.5 - 850.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 850.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-HOCl:
-  reactions:
-    HOCl + hv = OH + Cl:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-OCS:
-  reactions:
-    OCS + hv = CO + S:
-      citations:
-      - nm-range: 92.5 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-S8:
-  reactions:
-    S8 + hv = S8:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-CH4:
-  reactions:
-    CH4 + hv = 1CH2 + H2:
-      citations:
-      - nm-range: 92.5 - 172.5
-        citation: Kevin Zahnle
-        DOI:
-    CH4 + hv = CH3 + H:
-      citations:
-      - nm-range: 92.5 - 172.5
-        citation: Kevin Zahnle
-        DOI:
-    CH4 + hv = CH + H2 + H:
-      citations:
-      - nm-range: 92.5 - 172.5
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 172.5
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-C2H4:
-  reactions:
-    C2H4 + hv = C2H3 + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-SO:
-  reactions:
-    SO + hv = S + O:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-H2O2:
-  reactions:
-    H2O2 + hv = OH + OH:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-N2O:
-  reactions:
-    N2O + hv = N2 + O1D:
-      citations:
-      - nm-range: 176.2 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-H2CO:
-  reactions:
-    H2CO + hv = CO + H2:
-      citations:
-      - nm-range: 0.1 - 370.0
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    H2CO + hv = HCO + H:
-      citations:
-      - nm-range: 0.1 - 370.0
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    H2CO + hv = CO + H + H:
-      citations:
-      - nm-range: 0.1 - 370.0
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-  xsections:
-    citations:
-    - nm-range: 0.1 - 370.0
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes:
+  - {nm-range: [1.0, 399.9], citations: [Heays2017]}
 
 C2H2:
-  reactions:
-    C2H2 + hv = C2H + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
   xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [0.1, 6.3], citations: [Huebner2015]}
+  - {nm-range: [6.3, 299.4], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 299.4], citations: [Heays2017, Okabe1983]}
 
-HCl:
-  reactions:
-    HCl + hv = H + Cl:
-      citations:
-      - nm-range: 176.2 - 251.6
-        citation: Kevin Zahnle
-        DOI:
+C2H4:
   xsections:
-    citations:
-    - nm-range: 176.2 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [0.1, 91.3], citations: [Huebner2015]}
+  - {nm-range: [91.3, 194.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 194.9], citations: [Lavvas2008]}
 
-HS:
-  reactions:
-    HS + hv = H + S:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
+C2H6:
   xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [0.06, 15.4], citations: [Huebner2015]}
+  - {nm-range: [15.4, 149.5], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 149.5], citations: [Lavvas2008]}
 
-NO2:
-  reactions:
-    NO2 + hv = NO + O:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
+C3H6:
   xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [42.24727, 179.979], citations: [Walker2007]}
+  photodissociation-qy:
+  - {nm-range: [42.24727, 179.979], citations: [Lavvas2008]}
+  notes: The Lavvas et al. (2008) paths making CH2CCH2 + H2, CH3C2H + H2 and C3H5
+    + H are all in the C3H4 + H2 branch.
 
-CS2:
-  reactions:
-    CS2 + hv = CS + S:
-      citations:
-      - nm-range: 176.2 - 850.0
-        citation: Kevin Zahnle
-        DOI:
+C4H2:
   xsections:
-    citations:
-    - nm-range: 176.2 - 850.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [115.08, 195.0], citations: [Ferradaz2009]}
+  - {nm-range: [195.0, 250.0], citations: [Smith1998]}
+  photodissociation-qy:
+  - {nm-range: [115.08, 250.0], citations: [Lavvas2008]}
 
-N2:
-  reactions:
-    N2 + hv = N + N2D:
-      citations:
-      - nm-range: 92.5 - 172.5
-        citation: Kevin Zahnle
-        DOI:
+C4H4:
   xsections:
-    citations:
-    - nm-range: 92.5 - 172.5
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [160.0, 240.0], citations: [Fahr1996]}
+  photodissociation-qy:
+  - {nm-range: [160.0, 240.0], citations: [Lavvas2008]}
 
-NH3:
-  reactions:
-    NH3 + hv = NH2 + H:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-    NH3 + hv = NH + H2:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
+CH2CO:
   xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-CH3CN:
-  reactions:
-    CH3CN + hv = CH3 + CN:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-
-Cl2:
-  reactions:
-    Cl2 + hv = Cl + Cl:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: Kevin Zahnle
-        DOI:
-  xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [3.5, 279.4], citations: [Assumed]}
+  photodissociation-qy:
+  - {nm-range: [3.5, 279.4], citations: [Assumed]}
+  notes: Assumed to be identical to OCS.
 
 CH2N2:
-  reactions:
-    CH2N2 + hv = 1CH2 + N2:
-      citations:
-      - nm-range: 176.2 - 850.0
-        citation: Kevin Zahnle
-        DOI:
   xsections:
-    citations:
-    - nm-range: 176.2 - 850.0
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [259.01, 469.84], citations: [KellerRudek2013]}
+  photodissociation-qy:
+  - {nm-range: [259.01, 469.84], citations: [Assumed]}
+  notes: I used the T = 298 K file.
 
-HSO:
-  reactions:
-    HSO + hv = HS + O:
-      citations:
-      - nm-range: 176.2 - 251.6
-        citation: Kevin Zahnle
-        DOI:
+CH3CHO:
   xsections:
-    citations:
-    - nm-range: 176.2 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
+  - {nm-range: [60.1, 349.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [60.1, 349.9], citations: [Huebner2015]}
+
+CH3CN:
+  xsections:
+  - {nm-range: [1.0, 60.5], citations: [Huebner2015]}
+  - {nm-range: [60.5, 181.4], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [1.0, 181.4], citations: [Lavvas2008]}
+
+CH3OH:
+  xsections:
+  - {nm-range: [3.5, 219.4], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [3.5, 219.4], citations: [Hagege1968]}
+  notes: Hagege et al. reports two quantum yields, and I average them.
+
+CH4:
+  xsections:
+  - {nm-range: [5.7, 142.0], citations: [Heays2017]}
+  - {nm-range: [142.0, 152.0], citations: [Lee2001]}
+  photodissociation-qy:
+  - {nm-range: [5.7, 97.7], citations: [Heays2017]}
+  - {nm-range: [97.7, 152.0], citations: [Gans2011]}
+
+CO:
+  xsections:
+  - {nm-range: [0.1, 88.4], citations: [Huebner2015]}
+  - {nm-range: [88.4, 166.5], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 166.5], citations: [Heays2017]}
 
 CO2:
-  reactions:
-    CO2 + hv = CO + O:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
-    CO2 + hv = CO + O1D:
-      citations:
-      - nm-range: 92.5 - 251.6
-        citation: Kevin Zahnle
-        DOI:
   xsections:
-    citations:
-    - nm-range: 92.5 - 251.6
-      citation: Kevin Zahnle
-      DOI:
-  general-notes:
-      
-C4H4:
-  reactions:
-    C4H4 + hv = C2H2 + C2H2:
-      citations:
-      - nm-range: 160.00 - 240.00
-        citation: Gladstone et al. (1996)
-        DOI: 10.1006/icar.1996.0001
-    C4H4 + hv = C4H2 + H2:
-      citations:
-      - nm-range: 160.00 - 240.00
-        citation: Gladstone et al. (1996)
-        DOI: 10.1006/icar.1996.0001
+  - {nm-range: [0.2, 138.88888888888889], citations: [Heays2017]}
+  - {nm-range: [138.88888888888889, 212.7659574468085], citations: [Schmidt2013]}
+  photodissociation-qy:
+  - {nm-range: [0.2, 212.7659574468085], citations: [Huebner2015]}
+  notes: I use a low resolution version of the 270 K Schmidt et al. (2013) data.
+
+CS:
   xsections:
-    citations:
-    - nm-range: 160.00 - 240.00
-      citation: Fahr and Nayak (1996)
-      DOI: 10.1016/0301-0104(95)00401-7
-  general-notes: 
+  - {nm-range: [65.2, 167.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [65.2, 167.9], citations: [Heays2017]}
+
+CS2:
+  xsections:
+  - {nm-range: [0.06, 18.3], citations: [Huebner2015]}
+  - {nm-range: [18.3, 369.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 369.9], citations: [Heays2017]}
+
+Cl:
+  xsections:
+  - {nm-range: [0.01, 95.611], citations: [Huebner2015]}
+
+Cl2:
+  xsections:
+  - {nm-range: [0.061, 495.0], citations: [Huebner2015]}
+  photodissociation-qy:
+  - {nm-range: [0.061, 495.0], citations: [Huebner2015]}
+
+H:
+  xsections:
+  - {nm-range: [0.1, 7.7], citations: [Huebner2015]}
+  - {nm-range: [7.7, 199.9], citations: [Heays2017]}
+
+H2:
+  xsections:
+  - {nm-range: [0.1, 17.8], citations: [Huebner2015]}
+  - {nm-range: [17.8, 119.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 119.9], citations: [Heays2017]}
+
+H2CO:
+  xsections:
+  - {nm-range: [0.1, 6.3], citations: [Huebner2015]}
+  - {nm-range: [6.3, 375.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 250.0], citations: [Huebner2015]}
+  - {nm-range: [250.0, 375.9], citations: [Huebner2015, Burkholder2020]}
+
+H2O:
+  xsections:
+  - {nm-range: [0.1, 6.3], citations: [Huebner2015]}
+  - {nm-range: [6.3, 192.056], citations: [Heays2017]}
+  - {nm-range: [192.056, 230.413], citations: [Ranjan2020]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 120.1], citations: [Burkholder2020, Stief1975]}
+  - {nm-range: [120.1, 123.1], citations: [Burkholder2020, Slanger1982]}
+  - {nm-range: [123.1, 230.413], citations: [Burkholder2020, Stief1975]}
+
+H2O2:
+  xsections:
+  - {nm-range: [65.1, 349.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [65.1, 349.9], citations: [Heays2017, Burkholder2020]}
+
+H2S:
+  xsections:
+  - {nm-range: [0.06, 316.0], citations: [Huebner2015]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 316.0], citations: [Heays2017, Huebner2015]}
+
+H2SO4:
+  xsections:
+  - {nm-range: [118.13, 230.0], citations: [Lane2008]}
+  photodissociation-qy:
+  - {nm-range: [118.13, 230.0], citations: [Zhang2012]}
+  notes: I extrapolated the Lane et al. (2008) cross section beyond 181 nm.
 
 HCCCN:
-  reactions:
-    HCCCN + hv = C2H + CN:
-      citations:
-      - nm-range: 0.10 - 200.00
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
   xsections:
-    citations:
-    - nm-range: 0.10 - 200.00
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes:
-    
-ClO:
-  reactions:
-    ClO + hv = Cl + O1D:
-      citations:
-      - nm-range: 217.63 - 318.56
-        citation: Schmidt et al. (1998)
-        DOI: 10.1016/S0009-2614(97)01302-X
-    ClO + hv = Cl + O:
-      citations:
-      - nm-range: 217.63 - 318.56
-        citation: Schmidt et al. (1998)
-        DOI: 10.1016/S0009-2614(97)01302-X
-  xsections:
-    citations:
-    - nm-range: 217.63 - 318.56
-      citation: Burkholder (1990)
-      DOI: 10.1021/j100365a033
-  general-notes: 
-    
-H2SO4:
-  reactions:
-    H2SO4 + hv = SO3 + H2O:
-      citations:
-      - nm-range: 118.13 - 181.29
-        citation: Lane and Kjaergaard (2008)
-        DOI: 10.1021%2Fjp710863r
-  xsections:
-    citations:
-    - nm-range: 118.13 - 181.29
-      citation: Lane and Kjaergaard (2008)
-      DOI: 10.1021%2Fjp710863r
-  general-notes: null
+  - {nm-range: [0.1, 80.1], citations: [Huebner2015]}
+  - {nm-range: [80.1, 259.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 259.9], citations: [Huebner2015]}
 
-NO3:
-  reactions:
-    NO3 + hv = NO2 + O:
-      citations:
-      - nm-range: 0.06 - 9000.00
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    NO3 + hv = NO + O2:
-      citations:
-      - nm-range: 0.06 - 9000.00
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
+HCN:
   xsections:
-    citations:
-    - nm-range: 0.06 - 9000.00
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes: null
-  
+  - {nm-range: [0.1, 62.8], citations: [Huebner2015]}
+  - {nm-range: [62.8, 187.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 187.9], citations: [Heays2017]}
+
+HCl:
+  xsections:
+  - {nm-range: [4.5, 229.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [4.5, 229.9], citations: [Huebner2015, Heays2017]}
+
+HNCO:
+  xsections:
+  - {nm-range: [0.06, 50.1], citations: [Huebner2015]}
+  - {nm-range: [50.1, 332.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 332.9], citations: [Huebner2015]}
+
+HNO3:
+  xsections:
+  - {nm-range: [0.061, 598.0], citations: [Huebner2015]}
+  photodissociation-qy:
+  - {nm-range: [0.061, 598.0], citations: [Huebner2015]}
+
+HO2:
+  xsections:
+  - {nm-range: [91.3, 274.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [91.3, 274.9], citations: [Huebner2015]}
+
+HOCl:
+  xsections:
+  - {nm-range: [0.061, 513.0], citations: [Huebner2015]}
+  photodissociation-qy:
+  - {nm-range: [0.061, 513.0], citations: [Huebner2015]}
+
+HS:
+  xsections:
+  - {nm-range: [82.1, 314.8], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [82.1, 314.8], citations: [Heays2017]}
+
+HSO:
+  xsections:
+  - {nm-range: [91.3, 274.9], citations: [Assumed]}
+  photodissociation-qy:
+  - {nm-range: [91.3, 274.9], citations: [Assumed]}
+  notes: Assumed to be identical to HO2.
+
+He:
+  xsections:
+  - {nm-range: [0.01, 51.75], citations: [Huebner2015]}
+
+N:
+  xsections:
+  - {nm-range: [0.01, 25.1], citations: [Huebner2015]}
+  - {nm-range: [25.1, 84.9], citations: [Heays2017]}
+
+N2:
+  xsections:
+  - {nm-range: [0.1, 11.6], citations: [Huebner2015]}
+  - {nm-range: [11.6, 99.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 99.9], citations: [Heays2017]}
+  notes: Heays et al. Figure 10 makes suggests they mean N + N2D to be the dominant
+    path.
+
+N2H4:
+  xsections:
+  - {nm-range: [105.058, 239.945], citations: [KellerRudek2013, BiehlStuhl1991]}
+  - {nm-range: [239.945, 291.0], citations: [KellerRudek2013, Vaghjiani1993]}
+  photodissociation-qy:
+  - {nm-range: [105.058, 291.0], citations: [Lavvas2008]}
+
+N2O:
+  xsections:
+  - {nm-range: [91.3, 209.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [91.3, 209.9], citations: [Heays2017, Burkholder2020]}
+
+NH3:
+  xsections:
+  - {nm-range: [0.1, 8.1], citations: [Huebner2015]}
+  - {nm-range: [8.1, 226.4], citations: [Heays2017]}
+  - {nm-range: [226.4, 230.0], citations: [KellerRudek2013, Cheng2006]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 230.0], citations: [Huebner2015]}
+
+'NO':
+  xsections:
+  - {nm-range: [0.1, 6.6], citations: [Huebner2015]}
+  - {nm-range: [6.6, 229.3], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 229.3], citations: [Heays2017]}
+
+NO2:
+  xsections:
+  - {nm-range: [0.06, 397.75], citations: [Huebner2015]}
+  - {nm-range: [397.75, 660.0], citations: [Burkholder2020]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 660.0], citations: [Heays2017]}
+
+O:
+  xsections:
+  - {nm-range: [0.01, 4.9], citations: [Huebner2015]}
+  - {nm-range: [4.9, 91.0], citations: [Heays2017]}
+
+O2:
+  xsections:
+  - {nm-range: [4.2, 239.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [4.2, 239.9], citations: [Burkholder2020]}
+
+O3:
+  xsections:
+  - {nm-range: [0.06, 52.7], citations: [Huebner2015]}
+  - {nm-range: [52.7, 1099.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 220.0], citations: [Huebner2015]}
+  - {nm-range: [220.0, 1099.9], citations: [Matsumi2002]}
+  notes: I assume 250 K yields from Matsumi et al (2002) between 306 and 328 nm.
+
+OCS:
+  xsections:
+  - {nm-range: [3.5, 279.4], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [3.5, 279.4], citations: [Heays2017, Burkholder2020]}
+
 OClO:
-  reactions:
-    OClO + hv = ClO + O:
-      citations:
-      - nm-range: 0.10 - 496.00
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    OClO + hv = ClO + O1D:
-      citations:
-      - nm-range: 0.10 - 496.00
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
   xsections:
-    citations:
-    - nm-range: 0.10 - 496.00
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes: null
-  
-HO2NO2:
-  reactions:
-    HO2NO2 + hv = HO2 + NO2:
-      citations:
-      - nm-range: 0.10 - 1340.00
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
-    HO2NO2 + hv = OH + NO3:
-      citations:
-      - nm-range: 0.10 - 1340.00
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
+  - {nm-range: [0.1, 496.0], citations: [Huebner2015]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 496.0], citations: [Huebner2015]}
+
+S:
   xsections:
-    citations:
-    - nm-range: 0.10 - 1340.00
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes: null
-  
-SO2Cl2:
-  reactions:
-    SO2Cl2 + hv = ClSO2 + Cl:
-      citations:
-      - nm-range: 190.00 - 300.00
-        citation: Uthman (1978)
-        DOI: 10.1021/j100509a021
+  - {nm-range: [0.01, 41.4], citations: [Huebner2015]}
+  - {nm-range: [41.4, 119.6], citations: [Heays2017]}
+
+S2:
   xsections:
-    citations:
-    - nm-range: 190.00 - 300.00
-      citation: Uthman (1978)
-      DOI: 10.1021/j100509a021
-  general-notes: null
-  
-COCl2:
-  reactions:
-    COCl2 + hv = ClCO + Cl:
-      citations:
-      - nm-range: 0.0610 - 369.0000
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
+  - {nm-range: [61.8, 420.1], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [61.8, 420.1], citations: [Heays2017]}
+
+S3:
   xsections:
-    citations:
-    - nm-range: 0.0610 - 369.0000
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes: null
-  
-ClNO:
-  reactions:
-    ClNO + hv = Cl + NO:
-      citations:
-      - nm-range: 0.1000 - 774.8000
-        citation: Huebner and Mukherjee (2015)
-        DOI: 10.1016/j.pss.2014.11.022
+  - {nm-range: [350.0, 475.0], citations: [Billmers1991]}
+  photodissociation-qy:
+  - {nm-range: [350.0, 475.0], citations: [Assumed]}
+
+S4:
   xsections:
-    citations:
-    - nm-range: 0.1000 - 774.8000
-      citation: Huebner and Mukherjee (2015)
-      DOI: 10.1016/j.pss.2014.11.022
-  general-notes: null
-  
-SNO:
-  reactions:
-    SNO + hv = S + NO:
-      citations:
-      - nm-range: 176.2 - 450.0
-        citation: null
-        DOI: null
+  - {nm-range: [425.0, 575.0], citations: [KellerRudek2013, Billmers1991]}
+  photodissociation-qy:
+  - {nm-range: [425.0, 575.0], citations: [Assumed]}
+  notes: Here, I assume even split between S3 + S and S2 + S2 chanel.
+
+S8:
   xsections:
-    citations:
-    - nm-range: 176.2 - 450.0
-      citation: null
-      DOI: null
-  general-notes: Assumed to be the same as NO2.
+  - {nm-range: [175.4, 445.0], citations: [Bass1953]}
+  notes: Extracted from Figure 2 of Bass (1953) by Kevin Zahnle. For S8 rings.
+
+SO:
+  xsections:
+  - {nm-range: [0.06, 102.6], citations: [Huebner2015]}
+  - {nm-range: [102.6, 234.8], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 234.8], citations: [Heays2017]}
+
+SO2:
+  xsections:
+  - {nm-range: [1.7, 416.6], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [1.7, 416.6], citations: [Huebner2015]}
+
+SO3:
+  xsections:
+  - {nm-range: [180.0, 330.0], citations: [Burkholder2020]}
+  photodissociation-qy:
+  - {nm-range: [180.0, 330.0], citations: [Assumed]}

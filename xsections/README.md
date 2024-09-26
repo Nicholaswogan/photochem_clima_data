@@ -1,9 +1,22 @@
 
 # Cross Section Data
 
-This directory contains cross section data for photolysis reactions. Data is in the folders, and citations for the data are in `metadata.yaml`.
+This directory contains cross section data for photolysis reactions. Citations for the data are in `metadata.yaml` and `bib.bib`. The structure of each hdf5 file is as follows. Here I use `CO2.h5` as an example.
 
-The python script `check_consistency.py` checks for consistency between the metadata and the data in the folders.
+```yaml
+wavelengths: Wavelengths in nm
+photoabsorption: Total photoabsorption cross section in cm^2/molecule
+photodissociation: Photodissociation cross section in cm^2/molecule
+photoionisation: Photoionization cross section in cm^2/molecule
+photodissociation-qy:
+  wavelengths: Wavelengths for which quantum yields are defined
+  CO2 + hv => CO + O: Quantum yields for the CO + O branch
+  CO2 + hv => CO + O1D: Quantum yields for the CO + O1D branch
+```
+
+This data assumes that cross sections are zero beyond the edges of the specified wavelengths. Quantum yields, on the other hand, should be constantly extrapolated.
+
+`bins.h5` has the single key `wavl`, which gives the wavelength bins in nm. These bins were designed by Kevin Zahnle and Jim Kasting long ago.
 
 # Notes
 
@@ -70,3 +83,43 @@ Heays et al. (2017): H2
 I added HCCCN and C4H4 photolysis a long while ago, but didn't note it. For C4H4, I followed [Lavvas et al. (2008)](https://doi.org/10.1016/j.pss.2007.05.026), using cross sections from Fahr and Nayak (1996), and yields from Gladstone et al. (1996). For HCCCN, I just took values from Phidrates.
 
 The previous edit (1/16/24) made it so that when S8 rings only absorb radiation, but do not photolyze. The idea is that the rings would be split, but then quickly reform.
+
+## 9/26/24
+
+I updated all the data. Reproducing all this new data can be done with the scripts at https://github.com/Nicholaswogan/RateExplorer/tree/main/xsections at commit ef04d47be9b48825f6f2c6e7a242d94146143ac5 . Data mostly comes from the [Leiden database](https://home.strw.leidenuniv.nl/~ewine/photo/cross_sections.html), [Phidrates](https://phidrates.space.swri.edu/#) and [JPL-19](https://jpldataeval.jpl.nasa.gov/), but there are other sources as well all detailed in `metadata.yaml` and `bib.bib`
+
+I've now separated absorption, dissociation and ionization. So, the model can account for absorption when it occurs without causing a reaction, which is important for species like SO2. Below is a list of the photolysis reactions that I removed:
+
+```yaml
+- C2H6 + hv => C2H5 + H
+- CH3CHO + hv => CH3CO + H
+- S8 + hv => S8
+```
+
+Here is a list of all the new reactions
+
+```yaml
+- C2H4 + hv => C2H2 + H + H
+- C2H4 + hv => C2H2 + H2
+- C2H6 + hv => C2H2 + H2 + H2
+- C2H6 + hv => C2H4 + H + H
+- C2H6 + hv => C2H4 + H2
+- C2H6 + hv => CH3 + CH3
+- C2H6 + hv => CH4 + 1CH2
+- C3H6 + hv => C2H2 + CH4
+- C3H6 + hv => C2H3 + CH3
+- C3H6 + hv => C2H4 + 1CH2
+- C3H6 + hv => C3H4 + H2
+- C4H2 + hv => C2H + C2H
+- C4H2 + hv => C2H2 + C2
+- C4H2 + hv => C4H2
+- CH4 + hv => CH2 + H + H
+- CS + hv => C + S
+- H2SO4 + hv => SO3 + H2O
+- HNCO + hv => H + NCO
+- HNCO + hv => NH + CO
+- NH3 + hv => NH + H + H
+- OClO + hv => ClO + O
+- OClO + hv => ClO + O1D
+- S4 + hv => S2 + S2
+```
