@@ -1,0 +1,34 @@
+[build-system]
+requires = [
+    "setuptools>=61.2",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photochem_clima_data"
+version = "0.2.0"
+authors = [
+    { name = "Nicholas Wogan", email = "nicholaswogan@gmail.com" },
+]
+description = "Data for Photochem and Clima packages"
+requires-python = ">=3.6"
+dependencies = [
+    "h5py",
+    "pyyaml",
+]
+
+[project.license]
+text = "GNU General Public License v3.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/Nicholaswogan/photochem_clima_data"
+
+[tool.setuptools]
+packages = [
+    "photochem_clima_data",
+]
+include-package-data = true
