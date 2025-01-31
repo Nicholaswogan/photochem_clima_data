@@ -28,8 +28,9 @@ C3H6:
   - {nm-range: [42.24727, 179.979], citations: [Walker2007]}
   photodissociation-qy:
   - {nm-range: [42.24727, 179.979], citations: [Lavvas2008]}
-  notes: The Lavvas et al. (2008) paths making CH2CCH2 + H2, CH3C2H + H2 and C3H5
-    + H are all in the C3H4 + H2 branch.
+  notes: The \cite{Lavvas2008} paths making $\mathrm{CH_2CCH_2} + \mathrm{H_2}$, 
+    $\mathrm{CH_3C_2H} + \mathrm{H_2}$ and $\mathrm{C_3H_5} + \mathrm{H}$ 
+    are all in the $\mathrm{C_3H_4} + \mathrm{H_2}$ branch.
 
 C4H2:
   xsections:
@@ -56,7 +57,7 @@ CH2N2:
   - {nm-range: [259.01, 469.84], citations: [KellerRudek2013]}
   photodissociation-qy:
   - {nm-range: [259.01, 469.84], citations: [Assumed]}
-  notes: I used the T = 298 K file.
+  notes: We used the T = 298 K file from \cite{KellerRudek2013}.
 
 CH3CHO:
   xsections:
@@ -76,7 +77,7 @@ CH3OH:
   - {nm-range: [3.5, 219.4], citations: [Heays2017]}
   photodissociation-qy:
   - {nm-range: [3.5, 219.4], citations: [Hagege1968]}
-  notes: Hagege et al. reports two quantum yields, and I average them.
+  notes: \cite{Hagege1968} reports two quantum yields, and we average them.
 
 CH4:
   xsections:
@@ -99,7 +100,7 @@ CO2:
   - {nm-range: [138.88888888888889, 212.7659574468085], citations: [Schmidt2013]}
   photodissociation-qy:
   - {nm-range: [0.2, 212.7659574468085], citations: [Huebner2015]}
-  notes: I use a low resolution version of the 270 K Schmidt et al. (2013) data.
+  notes: We use a low resolution version of the 270 K \cite{Schmidt2013} data.
 
 CS:
   xsections:
@@ -171,7 +172,7 @@ H2SO4:
   - {nm-range: [118.13, 230.0], citations: [Lane2008]}
   photodissociation-qy:
   - {nm-range: [118.13, 230.0], citations: [Zhang2012]}
-  notes: I extrapolated the Lane et al. (2008) cross section beyond 181 nm.
+  notes: We extrapolated the \cite{Lane2008} cross section beyond 181 nm.
 
 HCCCN:
   xsections:
@@ -229,7 +230,7 @@ HSO:
   - {nm-range: [91.3, 274.9], citations: [Assumed]}
   photodissociation-qy:
   - {nm-range: [91.3, 274.9], citations: [Assumed]}
-  notes: Assumed to be identical to HO2.
+  notes: Assumed to be identical to HO$_2$.
 
 He:
   xsections:
@@ -246,8 +247,8 @@ N2:
   - {nm-range: [11.6, 99.9], citations: [Heays2017]}
   photodissociation-qy:
   - {nm-range: [0.1, 99.9], citations: [Heays2017]}
-  notes: Heays et al. Figure 10 makes suggests they mean N + N2D to be the dominant
-    path.
+  notes: \cite{Heays2017} Figure 10 suggests $\mathrm{N} + \mathrm{N(^2D)}$ 
+    is the dominant path.
 
 N2H4:
   xsections:
@@ -302,7 +303,8 @@ O3:
   photodissociation-qy:
   - {nm-range: [0.06, 220.0], citations: [Huebner2015]}
   - {nm-range: [220.0, 1099.9], citations: [Matsumi2002]}
-  notes: I assume 250 K yields from Matsumi et al (2002) between 306 and 328 nm.
+  notes: We assume the 250 K quantum yields from \cite{Matsumi2002} 
+    between 306 and 328 nm.
 
 OCS:
   xsections:
@@ -338,12 +340,13 @@ S4:
   - {nm-range: [425.0, 575.0], citations: [KellerRudek2013, Billmers1991]}
   photodissociation-qy:
   - {nm-range: [425.0, 575.0], citations: [Assumed]}
-  notes: Here, I assume even split between S3 + S and S2 + S2 chanel.
+  notes: We assume even split between $\mathrm{S_3} + \mathrm{S}$ 
+    and $\mathrm{S_2} + \mathrm{S_2}$ chanel.
 
 S8:
   xsections:
   - {nm-range: [175.4, 445.0], citations: [Bass1953]}
-  notes: Extracted from Figure 2 of Bass (1953) by Kevin Zahnle. For S8 rings.
+  notes: Extracted from Figure 2 of \cite{Bass1953}. For S$_8$ rings.
 
 SO:
   xsections:
