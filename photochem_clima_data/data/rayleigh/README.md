@@ -1,6 +1,6 @@
 # Rayleigh scattering cross sections
 
-Main secondary source is [Ranjan and Sasselov (2017)](https://doi.org/10.1089/ast.2016.1519). Primary sources are listed in `rayleigh.yaml`
+Main secondary source is [Ranjan and Sasselov (2017)](https://doi.org/10.1089/ast.2016.1519). Primary sources are listed in `rayleigh.yaml`. I have confirmed that all cross sections are similar to the cross sections in [Picaso v3.3](https://doi.org/10.5281/zenodo.14160128)
 
 ## Formalisms
 
