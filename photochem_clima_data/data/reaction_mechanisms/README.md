@@ -112,4 +112,32 @@ I have also pieced together Shomate polynomials for each condensible, based on t
 
 # 6/12/25
 
+## References
+
 I have added references for most all reactions based on work detailed here: https://github.com/Nicholaswogan/RateExplorer/tree/main/reactioncitations commit 5a7176e8fe06e9b9a9a81ce5874ff7636ac90262.
+
+## Reactions
+
+I also added two reactions based on [Pearce et al. (2020)](https://doi.org/10.3847/1538-4357/abae5c) and [Krasnopolsky (2013)](https://doi.org/10.1016/j.icarus.2013.04.026). The first is important for Titan. The second is important on Venus.
+
+```yaml
+- equation: N2D + HCN <=> CH + N2
+  rate-constant: {A: 6.8e-11, b: 0.0, Ea: 0.0}
+  ref: Pe20
+
+- equation: CO + SO2 <=> CO2 + SO
+  rate-constant: {A: 4.5e-12, b: 0.0, Ea: 24300.0}
+  ref: Kr13
+```
+
+## Low temperature thermodynamics
+
+I also updated all the thermodynamics as described here: https://github.com/Nicholaswogan/RateExplorer/blob/5a7176e8fe06e9b9a9a81ce5874ff7636ac90262/thermodynamics/README.md?plain=1#L9 . In brief, I created a new set of polynomials for 10 K < T < 298 K. The polynomials are designed to smoothly vary at the 298 K transition, and also at low T tend toward a heat capacity that only has translational and rotational degrees of freedom:
+
+$$c_p = \left(\frac{5}{2}\right)R + \left(\frac{N_\mathrm{rot}}{2}\right)R$$
+
+Here, $N_\mathrm{rot}$, is the number of rotational degrees of freedom. Now, the thermodynamics of all species are reasonable down to hopefully ~10 K. This changes `zahnle_earth.yaml` as well as `condensate_thermo.yaml`.
+
+## H2SO4 aerosol cross sections
+
+I added opacity for H2SO4 aerosols based on [Palmer and Williams (1975)](https://doi.org/10.1364/AO.14.000208).
