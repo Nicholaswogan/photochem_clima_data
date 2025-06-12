@@ -109,3 +109,7 @@ Here, I update all the gas saturation vapor pressures. All updates are cited and
 I use a new scheme based on the Clausius Clapeyron equation, which assumes latent heat has linear temperature dependence. The latent heat is allowed a discontinuous transition between ice and liquid phases.
 
 I have also pieced together Shomate polynomials for each condensible, based on the saturation vapor pressure and the gas-phase gibbs energy. I've saved all these polynomials in a separate file, which are useful for equilibrium chemistry calculations.
+
+# 6/12/25
+
+I have added references for most all reactions based on work detailed here: https://github.com/Nicholaswogan/RateExplorer/tree/main/reactioncitations commit 5a7176e8fe06e9b9a9a81ce5874ff7636ac90262.

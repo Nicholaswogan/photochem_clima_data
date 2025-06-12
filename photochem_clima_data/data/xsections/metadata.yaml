@@ -14,21 +14,21 @@ C2H4:
   - {nm-range: [0.1, 91.3], citations: [Huebner2015]}
   - {nm-range: [91.3, 194.9], citations: [Heays2017]}
   photodissociation-qy:
-  - {nm-range: [0.1, 194.9], citations: [Lavvas2008]}
+  - {nm-range: [0.1, 194.9], citations: [La08]}
 
 C2H6:
   xsections:
   - {nm-range: [0.06, 15.4], citations: [Huebner2015]}
   - {nm-range: [15.4, 149.5], citations: [Heays2017]}
   photodissociation-qy:
-  - {nm-range: [0.06, 149.5], citations: [Lavvas2008]}
+  - {nm-range: [0.06, 149.5], citations: [La08]}
 
 C3H6:
   xsections:
   - {nm-range: [42.24727, 179.979], citations: [Walker2007]}
   photodissociation-qy:
-  - {nm-range: [42.24727, 179.979], citations: [Lavvas2008]}
-  notes: The \cite{Lavvas2008} paths making $\mathrm{CH_2CCH_2} + \mathrm{H_2}$, 
+  - {nm-range: [42.24727, 179.979], citations: [La08]}
+  notes: The \cite{La08} paths making $\mathrm{CH_2CCH_2} + \mathrm{H_2}$, 
     $\mathrm{CH_3C_2H} + \mathrm{H_2}$ and $\mathrm{C_3H_5} + \mathrm{H}$ 
     are all in the $\mathrm{C_3H_4} + \mathrm{H_2}$ branch.
 
@@ -37,13 +37,13 @@ C4H2:
   - {nm-range: [115.08, 195.0], citations: [Ferradaz2009]}
   - {nm-range: [195.0, 250.0], citations: [Smith1998]}
   photodissociation-qy:
-  - {nm-range: [115.08, 250.0], citations: [Lavvas2008]}
+  - {nm-range: [115.08, 250.0], citations: [La08]}
 
 C4H4:
   xsections:
   - {nm-range: [160.0, 240.0], citations: [Fahr1996]}
   photodissociation-qy:
-  - {nm-range: [160.0, 240.0], citations: [Lavvas2008]}
+  - {nm-range: [160.0, 240.0], citations: [La08]}
 
 CH2CO:
   xsections:
@@ -70,7 +70,7 @@ CH3CN:
   - {nm-range: [1.0, 60.5], citations: [Huebner2015]}
   - {nm-range: [60.5, 181.4], citations: [Heays2017]}
   photodissociation-qy:
-  - {nm-range: [1.0, 181.4], citations: [Lavvas2008]}
+  - {nm-range: [1.0, 181.4], citations: [La08]}
 
 CH3OH:
   xsections:
@@ -255,7 +255,7 @@ N2H4:
   - {nm-range: [105.058, 239.945], citations: [KellerRudek2013, BiehlStuhl1991]}
   - {nm-range: [239.945, 291.0], citations: [KellerRudek2013, Vaghjiani1993]}
   photodissociation-qy:
-  - {nm-range: [105.058, 291.0], citations: [Lavvas2008]}
+  - {nm-range: [105.058, 291.0], citations: [La08]}
 
 N2O:
   xsections:
