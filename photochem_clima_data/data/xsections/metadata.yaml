@@ -2,6 +2,19 @@ C:
   xsections:
   - {nm-range: [1.0, 399.9], citations: [Heays2017]}
 
+C2:
+  xsections:
+  - {nm-range: [0.06, 91.3], citations: [Huebner2015]}
+  - {nm-range: [91.3, 137.0], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 137.0], citations: [Huebner2015]}
+
+C2H:
+  xsections:
+  - {nm-range: [90.1, 178.7], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [90.1, 178.7], citations: [Heays2017]}
+
 C2H2:
   xsections:
   - {nm-range: [0.1, 6.3], citations: [Huebner2015]}
@@ -45,6 +58,19 @@ C4H4:
   photodissociation-qy:
   - {nm-range: [160.0, 240.0], citations: [La08]}
 
+CH:
+  xsections:
+  - {nm-range: [0.0, 90.1], citations: [Huebner2015]}
+  - {nm-range: [90.1, 357.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.0, 357.9], citations: [Huebner2015]}
+
+CH2:
+  xsections:
+  - {nm-range: [91.3, 274.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [91.3, 274.9], citations: [Heays2017]}
+
 CH2CO:
   xsections:
   - {nm-range: [3.5, 279.4], citations: [Assumed]}
@@ -58,6 +84,12 @@ CH2N2:
   photodissociation-qy:
   - {nm-range: [259.01, 469.84], citations: [Assumed]}
   notes: We used the T = 298 K file from \cite{KellerRudek2013}.
+
+CH3:
+  xsections:
+  - {nm-range: [50.1, 240.0], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [50.1, 240.0], citations: [La08]}
 
 CH3CHO:
   xsections:
@@ -83,9 +115,17 @@ CH4:
   xsections:
   - {nm-range: [5.7, 142.0], citations: [Heays2017]}
   - {nm-range: [142.0, 152.0], citations: [Lee2001]}
+  - {nm-range: [152.0, 1000.0], citations: [Karkoschka1994]}
   photodissociation-qy:
   - {nm-range: [5.7, 97.7], citations: [Heays2017]}
-  - {nm-range: [97.7, 152.0], citations: [Gans2011]}
+  - {nm-range: [97.7, 1000.0], citations: [Gans2011]}
+
+CN:
+  xsections:
+  - {nm-range: [0.061, 82.7], citations: [Huebner2015]}
+  - {nm-range: [82.7, 206.6], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.061, 206.6], citations: [Heays2017]}
 
 CO:
   xsections:
@@ -124,6 +164,12 @@ Cl2:
   - {nm-range: [0.061, 495.0], citations: [Huebner2015]}
   photodissociation-qy:
   - {nm-range: [0.061, 495.0], citations: [Huebner2015]}
+
+ClO:
+  xsections:
+  - {nm-range: [217.63, 318.56], citations: [Schmidt1998]}
+  photodissociation-qy:
+  - {nm-range: [217.63, 318.56], citations: [Burkholder1990]}
 
 H:
   xsections:
@@ -187,6 +233,12 @@ HCN:
   - {nm-range: [62.8, 187.9], citations: [Heays2017]}
   photodissociation-qy:
   - {nm-range: [0.1, 187.9], citations: [Heays2017]}
+
+HCO:
+  xsections:
+  - {nm-range: [91.3, 655.5], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [91.3, 655.5], citations: [Heays2017]}
 
 HCl:
   xsections:
@@ -263,6 +315,19 @@ N2O:
   photodissociation-qy:
   - {nm-range: [91.3, 209.9], citations: [Heays2017, Burkholder2020]}
 
+NH:
+  xsections:
+  - {nm-range: [31.0, 335.5], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [31.0, 335.5], citations: [Heays2017]}
+
+NH2:
+  xsections:
+  - {nm-range: [0.1, 75.1], citations: [Huebner2015]}
+  - {nm-range: [75.1, 199.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.1, 199.9], citations: [Huebner2015]}
+
 NH3:
   xsections:
   - {nm-range: [0.1, 8.1], citations: [Huebner2015]}
@@ -284,6 +349,12 @@ NO2:
   - {nm-range: [397.75, 660.0], citations: [Burkholder2020]}
   photodissociation-qy:
   - {nm-range: [0.06, 660.0], citations: [Heays2017]}
+
+NO3:
+  xsections:
+  - {nm-range: [0.06, 703.0], citations: [Huebner2015]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 703.0], citations: [Huebner2015]}
 
 O:
   xsections:
@@ -318,6 +389,13 @@ OClO:
   photodissociation-qy:
   - {nm-range: [0.1, 496.0], citations: [Huebner2015]}
 
+OH:
+  xsections:
+  - {nm-range: [0.06, 82.8], citations: [Huebner2015]}
+  - {nm-range: [82.8, 264.9], citations: [Heays2017]}
+  photodissociation-qy:
+  - {nm-range: [0.06, 264.9], citations: [Heays2017]}
+
 S:
   xsections:
   - {nm-range: [0.01, 41.4], citations: [Huebner2015]}
@@ -346,7 +424,7 @@ S4:
 S8:
   xsections:
   - {nm-range: [175.4, 445.0], citations: [Bass1953]}
-  notes: Extracted from Figure 2 of \cite{Bass1953}. For S$_8$ rings.
+  notes: Extracted from Figure 2 of Bass (1953) by Kevin Zahnle. For S8 rings.
 
 SO:
   xsections:

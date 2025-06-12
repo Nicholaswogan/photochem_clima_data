@@ -3004,6 +3004,10 @@ reactions:
 - equation: Cl + O3 <=> ClO + O2
   rate-constant: {A: 2.8e-11, b: 0.0, Ea: 250}
   ref: At07
+- equation: C2 + hv => C + C
+  type: photolysis
+- equation: C2H + hv => C2 + H
+  type: photolysis
 - equation: C2H2 + hv => C2H + H
   type: photolysis
 - equation: C2H4 + hv => C2H2 + H + H
@@ -3042,9 +3046,17 @@ reactions:
   type: photolysis
 - equation: C4H4 + hv => C4H2 + H2
   type: photolysis
+- equation: CH + hv => C + H
+  type: photolysis
+- equation: CH2 + hv => CH + H
+  type: photolysis
 - equation: CH2CO + hv => 1CH2 + CO
   type: photolysis
 - equation: CH2N2 + hv => 1CH2 + N2
+  type: photolysis
+- equation: CH3 + hv => 1CH2 + H
+  type: photolysis
+- equation: CH3 + hv => CH2 + H
   type: photolysis
 - equation: CH3CHO + hv => CH3 + HCO
   type: photolysis
@@ -3066,6 +3078,8 @@ reactions:
   type: photolysis
 - equation: CH4 + hv => CH3 + H
   type: photolysis
+- equation: CN + hv => C + N
+  type: photolysis
 - equation: CO + hv => C + O
   type: photolysis
 - equation: CO2 + hv => CO + O
@@ -3077,6 +3091,10 @@ reactions:
 - equation: CS2 + hv => CS + S
   type: photolysis
 - equation: Cl2 + hv => Cl + Cl
+  type: photolysis
+- equation: ClO + hv => Cl + O
+  type: photolysis
+- equation: ClO + hv => Cl + O1D
   type: photolysis
 - equation: H2 + hv => H + H
   type: photolysis
@@ -3102,6 +3120,8 @@ reactions:
   type: photolysis
 - equation: HCN + hv => H + CN
   type: photolysis
+- equation: HCO + hv => H + CO
+  type: photolysis
 - equation: HCl + hv => H + Cl
   type: photolysis
 - equation: HNCO + hv => H + NCO
@@ -3124,6 +3144,10 @@ reactions:
   type: photolysis
 - equation: N2O + hv => N2 + O1D
   type: photolysis
+- equation: NH + hv => N + H
+  type: photolysis
+- equation: NH2 + hv => NH + H
+  type: photolysis
 - equation: NH3 + hv => NH + H + H
   type: photolysis
 - equation: NH3 + hv => NH + H2
@@ -3133,6 +3157,10 @@ reactions:
 - equation: NO + hv => N + O
   type: photolysis
 - equation: NO2 + hv => NO + O
+  type: photolysis
+- equation: NO3 + hv => NO + O2
+  type: photolysis
+- equation: NO3 + hv => NO2 + O
   type: photolysis
 - equation: O2 + hv => O + O
   type: photolysis
@@ -3147,6 +3175,8 @@ reactions:
 - equation: OClO + hv => ClO + O
   type: photolysis
 - equation: OClO + hv => ClO + O1D
+  type: photolysis
+- equation: OH + hv => O + H
   type: photolysis
 - equation: S2 + hv => S + S
   type: photolysis
