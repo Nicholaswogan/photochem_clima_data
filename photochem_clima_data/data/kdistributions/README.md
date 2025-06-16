@@ -74,7 +74,7 @@ Below are a summary of the relevant settings I used in HELIOS-K. These settings 
 - Voigt lineshape (profile = 1)
 
 ## N2O
-- I used HITRAN data downloaded on 4/23/25 with `hitran-api`
+- I used HITEMP2019 data.
 - 25 cm^-1 cutoff
 - Pressure broadening is done by air (qalphaL = 0.0)
 - Voigt lineshape (profile = 1)
