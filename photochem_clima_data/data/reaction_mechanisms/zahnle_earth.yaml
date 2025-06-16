@@ -3334,8 +3334,9 @@ reaction-notes:
     in Arrhenius form $A e^{-B/(RT)}$ suggest a lower B than is suggested
     by the heats of formation of the shards, which would imply extrapolated
     low temperature rates for 3-body recombination that are much too high.
-    The high temperature rate is adjusted to the form $A (T/298)^c e^{-B^'/(RT)}$
-    with $B^' > B$ to give plausible extrapolations at low temperature.
+    The high temperature rate is adjusted to the form $A (T/298)^c 
+    e^{-B^\prime/(RT)}$ with $B^\prime > B$ to give plausible extrapolations 
+    at low temperature.
 - reactions: [CH2 + CH2 <=> C2H3 + H]
   note: The products are assumed.
 - reactions: [H + C2H3 <=> H2 + C2H2]
@@ -3408,7 +3409,7 @@ reaction-notes:
   note: The published rate for \ref{H + HCN (+ M) <=> H2CN (+ M)} leads
     to H$_2$CN being rather abundant. Reported reactions of H$_2$CN are
     abstractions by H \citep{To03} and OH \citep{Ni03}. Upper limits $<
-    10^{-15} cm$^3$/s have been reported on reactions with H$_2$, CO, CH$_4$,
+    10^{-15}$ cm$^3$/s have been reported on reactions with H$_2$, CO, CH$_4$,
     and C$_2$H$_4$ \citep{Ni03}. Because H$_2$CN can be abundant, we have
     created other abstraction channels analogous to the reaction with OH.
 - reactions: [S + S (+ M) <=> S2 (+ M)]
@@ -3442,7 +3443,7 @@ reaction-notes:
   note: Reported rates for this reaction are discrepant, $4.0\times 10^{-11}$
     cm$^{3}$s$^{-1}$ (Sc73) and $<\!5\times 10^{-12}$ cm$^{3}$s$^{-1}$ \citep{Ni79}.
     The seemingly analogous reactions $\mathrm{O} + \mathrm{OH} \rightarrow
-    \mathrm{O_2} + \mathrm{H} ($k=3.3\times 10^{-11}$ cm$^{3}$s$^{-1}$),
+    \mathrm{O_2} + \mathrm{H}$ ($k=3.3\times 10^{-11}$ cm$^{3}$s$^{-1}$),
     $\mathrm{O} + \mathrm{HS} \rightarrow \mathrm{SO} + \mathrm{H}$ ( $k=7\times
     10^{-11}$ cm$^{3}$s$^{-1}$), and $\mathrm{S} + \mathrm{OH} \rightarrow
     \mathrm{SO} + \mathrm{H}$ ($k=6.6\times 10^{-11}$ cm$^{3}$s$^{-1}$),
@@ -3604,8 +3605,8 @@ reaction-notes:
 - reactions: [CH3CN + O <=> CH3 + NCO, CH3CN + OH <=> CH4 + NCO]
   note: A fit to a variety of sources on NIST.
 - reactions: [CH3CN + H <=> HCN + CH3]
-  note: Based on a rescaling of the rate of $\matrm{H} + \matrm{CH_4} \rightarrow
-    \matrm{CH_3} + \matrm{H_2}$ from \citet{Ja70}.
+  note: Based on a rescaling of the rate of $\mathrm{H} + \mathrm{CH_4} \rightarrow
+    \mathrm{CH_3} + \mathrm{H_2}$ from \citet{Ja70}.
 - reactions: [1CH2 + HCN (+ M) <=> CH3CN (+ M)]
   note: Assumed to be the same as \ref{1CH2 + C2H2 (+ M) <=> C3H4 (+ M)}.
 - reactions: [CH2CN + H (+ M) <=> CH3CN (+ M)]

@@ -118,7 +118,7 @@ def get_xsections_info():
 
     return species, sp_to_react, citation_abrv, citations_xs, citations_qy, sp_to_notes
 
-def build_xsections_table(nw=0.05, spw=0.1, rxw=0.2, xsw=0.25, qyw=0.25, notew=1.0):
+def build_xsections_table(nw=0.05, spw=0.1, rxw=0.2, xsw=0.29, qyw=0.29, notew=0.93):
     species, sp_to_react, citation_abrv, citations_xs, citations_qy, sp_to_notes = get_xsections_info()
 
     rows = r"p{"+str(nw)+r"\textwidth} p{"+str(spw)+r"\textwidth} p{"+str(rxw)+r"\textwidth} p{"+str(xsw)+r"\textwidth} p{"+str(qyw)+r"\textwidth}"
