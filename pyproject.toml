@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "photochem_clima_data"
-version = "0.2.1"
+version = "0.3.0"
 authors = [
     { name = "Nicholas Wogan", email = "nicholaswogan@gmail.com" },
 ]
