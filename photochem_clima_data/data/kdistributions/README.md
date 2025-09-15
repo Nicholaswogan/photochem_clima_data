@@ -1,10 +1,8 @@
 # kdistributions
 
-This subdirectory contains k-coefficients that I computed with HELIOS-K. I have a fork of HELIOS-K which I used to compute all these opacities: https://github.com/Nicholaswogan/HELIOS-K/tree/8f56e8a507d8f68db5eac1b146f9a2b81da52fe5
+This subdirectory contains k-coefficients that I computed with HELIOS-K. I have a fork of HELIOS-K which I used to compute all these opacities: https://github.com/Nicholaswogan/HELIOS-K
 
-All species are computed for pressures between ~10^-5 and 10^3 bars and temperatures between 100 and 2000 K. The only exception is O3, which only computes temperatures up to 1000 K. In general, these k-coefficients are designed to be applicable to terrestrial planetary atmospheres < 2000 K in the habitable zone. 
-
-Below are a summary of the relevant settings I used in HELIOS-K. These settings are largely motivated by the k-coefficients used in the `src.n68equiv` version of [ExoRT](https://github.com/storyofthewolf/ExoRT), and discussions with Eric Wolf.
+All species are computed for pressures between 10^-6 and 10^3 bars and temperatures between 50 and 2000 K. The only exception is O3, which only computes temperatures up to 1000 K. In general, these k-coefficients are designed to be applicable to terrestrial planetary atmospheres < 2000 K. Below are a summary of the relevant settings I used in HELIOS-K. All opacities use the HITRAN terrestrial composition for isotopologues.
 
 ## H2O
 - I used HITEMP 2010 data for 0 to 30000 cm^-1, and HITRAN 2016 data for 30000 to 42000 cm^-1
