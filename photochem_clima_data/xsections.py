@@ -139,17 +139,17 @@ def build_xsections_table(nw=0.05, spw=0.1, rxw=0.2, xsw=0.29, qyw=0.29, notew=0
             num_to_notes[j] = sp_to_notes[sp]
 
         if len(rxs) == 0:
-            label = r'\refstepcounter{photo}\label{P'+str(j)+r'}P\arabic{photo}'
+            label = r'P\arabic{photo}\refstepcounter{photo}\label{P'+str(j+1)+r'}'
             row = [pl.NoEscape(label), pl.NoEscape(sp_latex), '-',pl.NoEscape(citations_xs[sp]),'-']
             data_table.add_row(row)
             j += 1
         elif len(rxs) == 1:
-            label = r'\refstepcounter{photo}\label{P'+str(j)+r'}P\arabic{photo}'
+            label = r'P\arabic{photo}\refstepcounter{photo}\label{P'+str(j+1)+r'}'
             row = [pl.NoEscape(label), pl.NoEscape(sp_latex), pl.NoEscape(rxs[0]),pl.NoEscape(citations_xs[sp]),pl.NoEscape(citations_qy[sp])]
             data_table.add_row(row)
             j += 1
         else:
-            label = r'\refstepcounter{photo}\label{P'+str(j)+r'}P\arabic{photo}'
+            label = r'P\arabic{photo}\refstepcounter{photo}\label{P'+str(j+1)+r'}'
             row = [
                 pl.NoEscape(label), 
                 pl.NoEscape(sp_latex), 
@@ -160,7 +160,7 @@ def build_xsections_table(nw=0.05, spw=0.1, rxw=0.2, xsw=0.29, qyw=0.29, notew=0
             data_table.add_row(row)
             j += 1
             for i,rx in enumerate(rxs[1:]):
-                label = r'\refstepcounter{photo}\label{P'+str(j)+r'}P\arabic{photo}'
+                label = r'P\arabic{photo}\refstepcounter{photo}\label{P'+str(j+1)+r'}'
                 row = [
                     pl.NoEscape(label),
                     '', 

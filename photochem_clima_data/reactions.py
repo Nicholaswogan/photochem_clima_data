@@ -141,7 +141,7 @@ def build_reactions_table(nw=0.05, rxw=0.3, raw=0.3, cw=0.3):
         if ref_high is None:
             ref_high = ''
     
-        label = r'\refstepcounter{react}\label{R'+str(j)+r'}R\arabic{react}'
+        label = r'R\arabic{react}\refstepcounter{react}\label{R'+str(j+1)+r'}'
         row = [pl.NoEscape(label), pl.NoEscape(rx['equation']),pl.NoEscape(rx['rate']),pl.NoEscape(ref)]
         data_table.add_row(row)
     

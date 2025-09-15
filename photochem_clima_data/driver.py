@@ -36,8 +36,10 @@ def make_document(filename='photochemclimadata'):
     doc.preamble.append(pl.Command('newcounter',arguments='react'))
 
     # Content
+    doc.append(pl.NoEscape(r'\refstepcounter{photo}\label{P1}'))
     doc.append(build_xsections_table())
     data_table, notes = build_reactions_table()
+    doc.append(pl.NoEscape(r'\refstepcounter{react}\label{R1}'))
     doc.append(data_table)
     with doc.create(pl.Section("Reaction Notes")):
         for note in notes:
