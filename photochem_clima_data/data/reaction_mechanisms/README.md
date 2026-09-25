@@ -141,3 +141,17 @@ Here, $N_\mathrm{rot}$, is the number of rotational degrees of freedom. Now, the
 ## H2SO4 aerosol cross sections
 
 I added opacity for H2SO4 aerosols based on [Palmer and Williams (1975)](https://doi.org/10.1364/AO.14.000208).
+
+# 9/25/26
+
+## Thermodynamic discontinuity repair
+
+The gas thermodynamic fits in `zahnle_earth.yaml` had discontinuities at temperature
+boundaries that could abruptly change Gibbs energies and reverse reaction rates.
+I made heat capacity, enthalpy, entropy, and Gibbs energy continuous at all 181
+gas joins. The current repair preserves each original polynomial starting at
+298 K, aligns the 10 to 298 K fit to it, and then aligns higher-temperature
+fits in order. I regenerated `condensate_thermo.yaml` from the repaired gas
+fits and unchanged saturation models. The files were validated with Photochem
+0.9.0. The [RateExplorer repair commit](https://github.com/Nicholaswogan/RateExplorer/commit/9e36d92fd1ac59cf831e16617d6b66ba23ef12a0)
+documents this approach and its validation.
